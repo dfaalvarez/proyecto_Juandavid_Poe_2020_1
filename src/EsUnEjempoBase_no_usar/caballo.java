@@ -1,3 +1,5 @@
+package EsUnEjempoBase_no_usar;
+
 public class caballo {
     
     private int codigo, coorX, coorY, velocidad, avance;

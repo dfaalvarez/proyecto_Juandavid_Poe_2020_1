@@ -1,9 +1,10 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+package EsUnEjempoBase_no_usar;
 /**
  *
  * @author jorge
@@ -54,19 +55,13 @@ public class frmInicio extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        lblLinea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/linea.png"))); // NOI18N
-
         lblCaballo1.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
-        lblCaballo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/horse.png"))); // NOI18N
 
         lblCaballo2.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
-        lblCaballo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/horse.png"))); // NOI18N
 
         lblCaballo3.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
-        lblCaballo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/horse.png"))); // NOI18N
 
         lblCaballo4.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
-        lblCaballo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/horse.png"))); // NOI18N
 
         jButton1.setText("Start");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -74,8 +69,6 @@ public class frmInicio extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        lblBandera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bandera.png"))); // NOI18N
 
         txtR.setEditable(false);
         txtR.setColumns(20);
@@ -155,7 +148,7 @@ public class frmInicio extends javax.swing.JFrame {
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
                             .addComponent(lblCaballo4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(lblLinea, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addComponent(lblLinea, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton2)
