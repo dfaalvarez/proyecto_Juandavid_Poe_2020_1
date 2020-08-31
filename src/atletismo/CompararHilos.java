@@ -1,0 +1,7 @@
+
+package atletismo;
+
+
+class CompararHilos {
+    
+}
