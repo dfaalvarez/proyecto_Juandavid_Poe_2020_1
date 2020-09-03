@@ -140,7 +140,6 @@ public class LienzoPrincipal implements ActionListener {
         for (int i = 3; i < 59; i++) {
             labls[i] = new JLabel();
             labls[i].setHorizontalAlignment(SwingConstants.CENTER);
-            System.out.println("Entro");
             if (i == 4 || i == 18 || i == 32 || i == 46 || i == 15 || i == 29 || i == 43 || i == 57) {
                 labls[i].setIcon(blackImg);
             } else {
