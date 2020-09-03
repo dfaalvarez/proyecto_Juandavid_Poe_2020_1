@@ -153,23 +153,7 @@ public class LienzoPrincipal implements ActionListener {
         for (int i = 3; i < 59; i++) {
             panlI[0].add(labls[i]);
         }
-        //--------------------
-//        textsF[0] = new JTextField();
-//        textsF[0].setHorizontalAlignment(SwingConstants.CENTER);
-//        textsF[0].setColumns(20);
-//        textsF[0].setBorder(bnombs[1]);
-//        //---------------
-//        for (int i = 0; i < 2; i++) {
-//            rads[i] = new JRadioButton();
-//            if (i == 0) {
-//                panlI[i].add(textsF[i]);
-//                rads[i].setText("Femenino");
-//            } else {
-//                rads[i].setText("Masculino");
-//            }
-//            panlI[1].add(rads[i]);
-//        }
-        //---------------
+        //------------------------------
         for (int i = 0;
                 i < 2; i++) {
             if (i == 0) {
