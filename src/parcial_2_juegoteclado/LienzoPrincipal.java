@@ -16,6 +16,7 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 //import javax.swing.BoxLayout;
 //import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -26,6 +27,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 //import javax.swing.SwingConstants;
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 import javax.swing.border.Border;
@@ -108,7 +110,7 @@ public class LienzoPrincipal implements ActionListener {
         for (int i = 0; i < 2; i++) {
             panlI[i] = new JPanel();
         }
-        panlI[0].setLayout(new GridLayout(0, 1));
+        panlI[0].setLayout(new GridLayout(4, 0));
         panlI[1].setLayout(new GridLayout(0, 1));
         bnombs[0] = BorderFactory.createTitledBorder(bcolors[0], "Panel Carrera", TitledBorder.CENTER, TitledBorder.BELOW_TOP);
         bnombs[1] = BorderFactory.createTitledBorder(bcolors[0], "Tiempo", TitledBorder.CENTER, TitledBorder.BELOW_TOP);
@@ -117,6 +119,7 @@ public class LienzoPrincipal implements ActionListener {
 //        //--------------------
         for (int i = 1; i < 3; i++) {
             labls[i] = new JLabel(" " + 0);
+            labls[i].setHorizontalAlignment(SwingConstants.CENTER);
             labls[i].setFont(new java.awt.Font("Arial", 1, 70));//tipo de letra
             if (i == 1) {
                 labls[i].setBorder(bnombs[i]);
@@ -127,6 +130,28 @@ public class LienzoPrincipal implements ActionListener {
         }
         for (int i = 1; i < 3; i++) {
             panlI[1].add(labls[i]);
+        }
+        //-----------------------------
+        ImageIcon corredor = new ImageIcon(getClass().getResource("/imagenes/runner.png"));
+        ImageIcon coredorImg = new ImageIcon(corredor.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH));
+
+        ImageIcon black = new ImageIcon(getClass().getResource("/imagenes/black.png"));
+        ImageIcon blackImg = new ImageIcon(black.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH));
+        for (int i = 3; i < 59; i++) {
+            labls[i] = new JLabel();
+            labls[i].setHorizontalAlignment(SwingConstants.CENTER);
+            System.out.println("Entro");
+            if (i == 4 || i == 18 || i == 32 || i == 46 || i == 15 || i == 29 || i == 43 || i == 57) {
+                labls[i].setIcon(blackImg);
+            } else {
+                if (i != 16 && i != 30 && i != 44 && i != 58) {
+                    labls[i].setVisible(false);
+                }
+                labls[i].setIcon(coredorImg);
+            }
+        }
+        for (int i = 3; i < 59; i++) {
+            panlI[0].add(labls[i]);
         }
         //--------------------
 //        textsF[0] = new JTextField();
@@ -145,7 +170,8 @@ public class LienzoPrincipal implements ActionListener {
 //            panlI[1].add(rads[i]);
 //        }
         //---------------
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0;
+                i < 2; i++) {
             if (i == 0) {
                 panls[0].add(panlI[i], BorderLayout.CENTER);
             } else {
@@ -168,7 +194,7 @@ public class LienzoPrincipal implements ActionListener {
 //        rads = new JRadioButton[4];
         bcolors[0] = BorderFactory.createLineBorder(Color.BLACK);
         bcolors[1] = BorderFactory.createLineBorder(Color.RED);
-        labls = new JLabel[32];
+        labls = new JLabel[70];
         textsF = new JTextField[4];
         textsA = new JTextArea[2];
         buttons = new JButton[4];
