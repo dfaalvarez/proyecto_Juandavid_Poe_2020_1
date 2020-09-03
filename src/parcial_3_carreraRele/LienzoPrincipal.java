@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package parcial_2_juegoteclado;
+package parcial_3_carreraRele;
 
 //import com.toedter.calendar.JCalendar;
 import java.awt.BorderLayout;
